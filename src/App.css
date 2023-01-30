@@ -1,0 +1,71 @@
+* {
+  font-family: sans-serif;  
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;  
+}
+
+.App {
+  width: 500px;
+  padding: 10px;
+  border: 10px solid;
+  background-color: rgba(218, 74, 146, 0.63);
+  border-image:
+  linear-gradient(
+      #ff512f, #dd2476, #1c64ff) 1;
+  animation: rotate 2.5s ease-in infinite;    
+}
+@keyframes rotate {
+  50%{
+      border-image:
+      linear-gradient(
+          #ff512f, #dd2476, #1c64ff) ;
+    }
+}
+
+form > p {
+  margin-left: auto;
+  width: auto;
+  margin-right: auto;
+}
+
+.calctitle > h1{
+  z-index: 1;
+  font-family: 'Teko', sans-serif;    
+  text-transform: uppercase;
+  animation: glow 2.5s ease-in-out infinite 
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #2d9da9;
+  }
+  to {
+    text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+  }
+}
+
+input,
+button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: tomato;
+}
+input {
+  display: block;
+  margin-bottom: 20px;
+
+}
+button {
+  border: 1px solid gray;
+  background: whitesmoke;
+  margin-right: 5px;
+  border-color: tomato;
+  font-weight: bolder;
+  background-color: rgba(87, 31, 139, 0.26);
+}
+button:nth-last-child(2),
+button:nth-last-child(1) {
+  background: tomato;
+  color: white;
+}
